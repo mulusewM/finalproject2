@@ -1,0 +1,52 @@
+<link rel="shortcut icon" href="images/USERS.jpg" />
+<?php include('promotion_request_php.php');?>
+<form class="form-horizontal form-label-left" novalidate method="post">
+                    <span class="section">Promotion Request Form</span>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="rank">Rank Of Promotion  <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea id="rank" class="form-control col-md-7 col-xs-12" onkeypress="return alpha(event,letters)" data-validate-length-range="1000000"  name="rank" required="required" type="text"></textarea> 
+                      </div>
+                    </div> 
+					<div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="qualification">Qualification <span class="required">*</span>
+                      </label>
+					  
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                         <input id="textarea" required="required" name="qualification" onkeypress="return alpha(event,letters)" class="form-control col-md-7 col-xs-12">
+                       </div>
+                    </div>
+					<div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="experience">Experience<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="experience" onkeypress="return alpha(event,letters)" class="form-control col-md-7 col-xs-12" name="experience" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group" style="margin-left:43%;">
+                      <div class="col-md-6 col-md-offset-3">
+                        <button type="reset" class="btn btn-primary">Cancel</button>
+                        <button id="send" name="promo_request" type="submit" class="btn btn-success">Request</button>
+                      </div>
+                    </div>
+                  </form>
+<script type="text/javascript">
+<!--
+var letters=' ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyzàáÀÁéèÈÉíìÍÌïÏóòÓÒúùÚÙüÜ'
+var numbers='1234567890'
+var signs=',.:;@-\''
+var mathsigns='+-=()*/'
+var custom='<>#$%&?¿'
+
+function alpha(e,allow) {
+     var k;
+     k=document.all?parseInt(e.keyCode): parseInt(e.which);
+     return (allow.indexOf(String.fromCharCode(k))!=-1);
+	 alert('letter only');
+}
+
+// -->
+</script>
